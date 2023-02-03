@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap');
+
+.nav{
+    width: 100%;
+    min-height: 30px;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255,255,255,0.8);
+}
+
+.logo{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.other{
+    width: 90%;
+    display: flex;
+    font-size: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.link:first-child{
+    margin-left: 2rem;
+}
+.link:not(:first-child){
+    margin-left: 1rem;
+}
+
+.link:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.profile{
+    border-radius: 100%;
+    overflow: hidden;
+    width:40px;
+    height: 40px;
+    margin-left: auto;
+    background-color: black;
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+}
+
+.hamburger{
+    display: none;
+    width: 70%;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    height: fit-content;
+}
+
+.hOther{
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+    align-items: flex-end;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    min-height:fit-content;
+    max-height:fit-content;
+}
+
+.hOtherActive{
+    height: 170%;
+    visibility: visible;
+}
+
+@media screen and (max-width:1000px){
+    .other{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+}
+
+/* @media screen and (max-width:600px){
+    .hOther{
+    }
+} */
