@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./NavBar.module.css"
 import {FaBars} from "react-icons/fa"
+import { Link } from 'react-router-dom';
 import logo from "./logo.svg"
 const NavBar = () => {
     const [hamburgerActive,setHamburgerActive] = useState(false);
@@ -14,8 +15,8 @@ const NavBar = () => {
                 <img src={logo} alt="logo"></img>
             </div>
             <div className={styles.other}>
-                <div className={styles.link}>{"Menu"}</div>
-                <div className={styles.link}>{"Grievances"}</div>
+                <Link className={styles.link} to="/Home">{"Menu"}</Link>
+                <Link className={styles.link} to="/">{"Grievances"}</Link>
                 <div className={styles.profile}>
                     <img src={logo} alt="profile" className={styles.img}></img>
                 </div>
@@ -23,8 +24,8 @@ const NavBar = () => {
             <div className={styles.hamburger}>
                 <FaBars size={40} onClick={setActive}></FaBars>
                 <div className={`${styles.hOther} ${hamburgerActive===true?styles.hOtherActive:""}`}>
-                    <div className={styles.link}>{"Menu"}</div>
-                    <div className={styles.link}>{"Grievances"}</div>
+                    <Link className={styles.link} to="/Home">{"Menu"}</Link>
+                    <Link className={styles.link} to="/">{"Grievances"}</Link>
                     <div className={styles.profile}>
                         <img src={logo} alt="profile" className={styles.img}></img>
                     </div>

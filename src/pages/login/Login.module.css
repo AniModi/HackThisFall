@@ -1,0 +1,126 @@
+
+.bg{
+  background: url("./../../img/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+.container{
+    margin-top: 1rem;
+    background-color: #1D2123;
+    height: 80%;
+    width: 30%;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F6F6F6;
+    padding: 1rem;
+    min-height: 550px;
+    min-width: 250px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.titleDesc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7C838A;
+    width: 100%;
+}
+
+.label{
+    width: 100%;
+    color: #7C838A;
+    min-width: 250px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    margin-top: 5rem;
+}
+
+
+.input input{
+    background-color: rgba(176, 186, 195, 0.32);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    font-size: 1rem;
+    color: #8A8A8A;
+    border: none;
+    margin-top: 0.2rem;
+}
+
+.input input:focus{
+    border: none;
+}
+
+
+.forgot{
+    color: #FA2870;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btnCont{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.btn{
+    width: 95%;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #FA2870;
+    color: white;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.noAcc{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+}
+
+.register{
+    color: #FA2870;
+    cursor: pointer;
+    margin-left: 0.2rem;
+}
+

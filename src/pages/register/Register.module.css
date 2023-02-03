@@ -1,0 +1,150 @@
+.bg{
+  background: url("./../../img/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+.container{
+    margin-top: 1rem;
+    background-color: #fd9a1f;
+    background-color: #1D2123;
+    height: 80%;
+    width: 60%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F6F6F6;
+    padding: 3rem;
+    min-height: 400px;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 60%;
+    flex-wrap: wrap;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input input{
+    background-color: rgba(176, 186, 195, 0.32);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    font-size: 1rem;
+    color: #8A8A8A;
+    border: none;
+    margin-top: 0.2rem;
+}
+
+.input input:focus{
+    border: none;
+}
+
+.label{
+    width: 50%;
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+.btnCont{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #FA2870;
+    color: white;
+    margin-top: 1rem;
+}
+.btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.alAcc{
+    display: flex;
+    padding: 1rem;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+}
+
+.login{
+    color: #FA2870;
+    cursor: pointer;
+    margin-left: 0.4rem;
+}
+
+.privacyCont{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #7C838A;
+}
+
+.terms{
+    color: #FA2870;
+    margin:0 0.2rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:850px) {
+    .input{
+        height: fit-content;
+        justify-content: center;
+    }
+    .input .label{
+        margin-top: 1rem;
+    }
+    .container{
+        min-height: 800px;
+        margin: 2rem;
+    }
+    .privacyCont{
+        width: 200px;
+        font-size: 0.8rem;
+    }
+    .alAcc{
+        width: 200px;
+        font-size: 0.9rem;
+    }
+}
