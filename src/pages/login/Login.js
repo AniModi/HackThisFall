@@ -26,7 +26,7 @@ const Login = () => {
         setError('');
         setLoading(true);
         signin(userInput.email,userInput.password).then(
-            (ref)=>{
+            ()=>{
                 setLoading(false);
                 history('/home');
             }
@@ -44,13 +44,12 @@ const Login = () => {
             password:""
         });
     }
-
+    console.log(error);
     useEffect(()=>{
         if(currentUser){
             history('/home')
         }
     },[currentUser,history]);
-    console.log(error);
     return (
         <>
         <div className={styles.bg}>
@@ -75,7 +74,7 @@ const Login = () => {
                     {"Forgot your password?"}
                 </div>
                 <div className={styles.btnCont}>
-                    <button className={styles.btn} disable={loading} onClick={handleSignIn}>Login</button>
+                    <button className={styles.btn} disable={loading.toString()} onClick={handleSignIn}>Login</button>
                 </div>
                 <div className={styles.registerCont}>
                     <div className={styles.noAcc}>{"Don't have an account?"}<Link to={'/register'} className={styles.register}>{"Register"}</Link></div>

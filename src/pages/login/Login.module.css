@@ -1,6 +1,6 @@
 
 .bg{
-  background: url("./../../img/bg.png") no-repeat center center fixed;
+  background: url("./../../img/bg.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   width: 100vw;
@@ -13,7 +13,7 @@
 
 .container{
     margin-top: 1rem;
-    background-color: #1D2123;
+    background-color: rgb(202, 199, 199,0.5);
     height: 80%;
     width: 30%;
     border-radius: 1.5rem;
@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    color: #F6F6F6;
+    /* color: #F6F6F6; */
     padding: 1rem;
     min-height: 550px;
     min-width: 250px;
@@ -39,13 +39,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #7C838A;
+    /* color: #7C838A; */
     width: 100%;
 }
 
 .label{
     width: 100%;
-    color: #7C838A;
+    /* color: #7C838A; */
     min-width: 250px;
 }
 
@@ -61,12 +61,12 @@
 
 
 .input input{
-    background-color: rgba(176, 186, 195, 0.32);
+    /* background-color: rgba(176, 186, 195, 0.32); */
     padding: 0.8rem;
     border-radius: 0.5rem;
     width: 90%;
     font-size: 1rem;
-    color: #8A8A8A;
+    /* color: #8A8A8A; */
     border: none;
     margin-top: 0.2rem;
 }

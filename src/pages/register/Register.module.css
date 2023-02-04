@@ -1,5 +1,5 @@
 .bg{
-  background: url("./../../img/bg.png") no-repeat center center fixed;
+  background: url("./../../img/bg.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   width: 100vw;
@@ -9,29 +9,28 @@
   align-items: center;
   overflow: auto;
 }
-
 .container{
     margin-top: 1rem;
-    background-color: #fd9a1f;
-    background-color: #1D2123;
+    background-color: rgb(202, 199, 199,0.5);
     height: 80%;
-    width: 60%;
-    border-radius: 1rem;
+    width: 30%;
+    border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    color: #F6F6F6;
-    padding: 3rem;
-    min-height: 400px;
+    /* color: #F6F6F6; */
+    padding: 1rem;
+    min-height: 450px;
+    min-width: 250px;
 }
-
 
 .title{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
+    height: 20%;
     font-weight: bold;
 }
 
@@ -41,7 +40,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    height: 60%;
+    height: 40%;
     flex-wrap: wrap;
 }
 
@@ -54,12 +53,12 @@
 }
 
 .input input{
-    background-color: rgba(176, 186, 195, 0.32);
+    /* background-color: rgba(176, 186, 195, 0.32); */
     padding: 0.8rem;
     border-radius: 0.5rem;
     width: 90%;
     font-size: 1rem;
-    color: #8A8A8A;
+    /* color: #8A8A8A; */
     border: none;
     margin-top: 0.2rem;
 }
@@ -69,7 +68,7 @@
 }
 
 .label{
-    width: 50%;
+    width: 90%;
     box-sizing: border-box;
     min-width: 250px;
 }
@@ -113,10 +112,10 @@
 .privacyCont{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    color: #7C838A;
+    /* color: #7C838A; */
 }
 
 .terms{
@@ -127,7 +126,7 @@
 }
 
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:1200px) {
     .input{
         height: fit-content;
         justify-content: center;
@@ -136,7 +135,6 @@
         margin-top: 1rem;
     }
     .container{
-        min-height: 800px;
         margin: 2rem;
     }
     .privacyCont{
@@ -146,5 +144,8 @@
     .alAcc{
         width: 200px;
         font-size: 0.9rem;
+    }
+    .title{
+        font-size: 1.3rem;
     }
 }

@@ -37,6 +37,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .button:first-child{
@@ -46,6 +48,8 @@
 .button{
     padding: 0.1rem;
     cursor: pointer;
+    background: transparent;
+    border: none;
 }
 
 .button:first-child *{
@@ -54,4 +58,8 @@
 
 .button:last-child *{
     color: red;
+}
+
+.toast{
+    font-size: 1rem;
 }

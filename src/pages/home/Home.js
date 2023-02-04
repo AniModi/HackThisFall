@@ -1,16 +1,64 @@
 import React from 'react';
 import styles from "./Home.module.css"
-import Menu from '../../components/navbar/Menu';
-import NavBar from './../../components/navbar/NavBar'
+import Menu from '../../components/Menu';
+import 'react-toastify/dist/ReactToastify.min.css'
+import NavBar from './../../components/NavBar'
 import {FaThumbsDown,FaThumbsUp} from 'react-icons/fa'
-const obj = [
-    {
-        name: "Top songs",
-        arr:[0,1,2,3,4,5,6,7,8,9,10],
-        page:"1"
-    }
-];
+import { toast, ToastContainer } from 'react-toastify';
+import { useAuth } from '../../contexts/AuthContext';
+const arr = [0,1,2,3,4,5,6];
 const Home = () => {
+    const {currentUser} = useAuth();
+    const handleToastIn = ()=>{
+        if(currentUser===null){
+            toast('Please log in!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+            return;
+        }
+        toast('Opted In successfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+    }
+    const handleToastOut = ()=>{
+        if(currentUser===null){
+            toast('Please log in!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+            return;
+        }
+        toast('Opted out successfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+    }
     return(
         <>
         <NavBar></NavBar>
@@ -21,18 +69,17 @@ const Home = () => {
                         {"Breakfast"}
                     </div>
                     <div className={styles.btn}>
-                        <button className={styles.button}>
+                        <button className={styles.button} onClick={handleToastIn}>
                             <FaThumbsUp></FaThumbsUp>
                         </button>
-                        <button className={styles.button}>
+                        <button className={styles.button} onClick={handleToastOut}>
                             <FaThumbsDown></FaThumbsDown>
                         </button>
                     </div>
+                    <ToastContainer bodyClassName={styles.toast}/>
                 </div>
                 {
-                obj.map(e=>
-                    <Menu key={e["name"]} page={e["page"]} name={e["name"]} arr={e["arr"]}></Menu>
-                )
+                    <Menu key={arr} ind={'breakfast'} arr={arr}></Menu>
             }
             </div>
             <div className={styles.menu}>
@@ -41,18 +88,17 @@ const Home = () => {
                         {"Lunch"}
                     </div>
                     <div className={styles.btn}>
-                        <button className={styles.button}>
+                        <button className={styles.button} onClick={handleToastIn}>
                             <FaThumbsUp></FaThumbsUp>
                         </button>
-                        <button className={styles.button}>
+                        <button className={styles.button} onClick={handleToastOut}>
                             <FaThumbsDown></FaThumbsDown>
                         </button>
                     </div>
                 </div>
                 {
-                obj.map(e=>
-                    <Menu key={e["name"]} page={e["page"]} name={e["name"]} arr={e["arr"]}></Menu>
-                )
+                    <Menu key={arr} ind={'lunch'} arr={arr}></Menu>
+
             }
             </div>
             <div className={styles.menu}>
@@ -61,18 +107,17 @@ const Home = () => {
                         {"Snacks"}
                     </div>
                     <div className={styles.btn}>
-                        <button className={styles.button}>
+                        <button className={styles.button} onClick={handleToastIn}>
                             <FaThumbsUp></FaThumbsUp>
                         </button>
-                        <button className={styles.button}>
+                        <button className={styles.button} onClick={handleToastOut}>
                             <FaThumbsDown></FaThumbsDown>
                         </button>
                     </div>    
                 </div>
                 {
-                obj.map(e=>
-                    <Menu key={e["name"]} page={e["page"]} name={e["name"]} arr={e["arr"]}></Menu>
-                )
+                <Menu key={arr} ind={'snacks'} arr={arr}></Menu>
+
             }
             </div>
             <div className={styles.menu}>
@@ -81,18 +126,16 @@ const Home = () => {
                         {"Dinner"}
                     </div>
                     <div className={styles.btn}>
-                        <button className={styles.button}>
+                        <button className={styles.button} onClick={handleToastIn}>
                             <FaThumbsUp></FaThumbsUp>
                         </button>
-                        <button className={styles.button}>
+                        <button className={styles.button} onClick={handleToastIn}>
                             <FaThumbsDown></FaThumbsDown>
                         </button>
                     </div>    
                 </div>
                 {
-                obj.map(e=>
-                    <Menu key={e["name"]} page={e["page"]} name={e["name"]} arr={e["arr"]}></Menu>
-                )
+                    <Menu key={arr} ind={'dinner'} arr={arr}></Menu>
             }
             </div>
         </div>

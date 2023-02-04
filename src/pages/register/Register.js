@@ -7,12 +7,10 @@ const Register = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
     const [userInput,setUserInput] = useState({
-        username:"",
-        fullName:"",
         email:"",
-        country:"",
-        dob:"",
-        password:""
+        password:"",
+        fullName:""
+        
     });
     const {signup,currentUser} = useAuth();
     const history = useNavigate();
@@ -30,11 +28,8 @@ const Register = () => {
             setLoading(false);
         })
         setUserInput({
-            username:"",
             fullName:"",
             email:"",
-            country:"",
-            dob:"",
             password:""
         });
     }
@@ -53,35 +48,11 @@ const Register = () => {
             }
         })
     }
-    const setUserName = (event) =>{
-        setUserInput((prev)=>{
-            return {
-                ...prev,
-                username:event.target.value
-            }
-        })
-    }
     const setEmail = (event) =>{
         setUserInput((prev)=>{
             return {
                 ...prev,
                 email:event.target.value
-            }
-        })
-    }
-    const setCountry = (event) =>{
-        setUserInput((prev)=>{
-            return {
-                ...prev,
-                country:event.target.value
-            }
-        })
-    }
-    const setDob = (event) =>{
-        setUserInput((prev)=>{
-            return {
-                ...prev,
-                dob:event.target.value
             }
         })
     }
@@ -106,26 +77,14 @@ const Register = () => {
                             {"Full Name"}
                             <input type={"text"} placeholder={"Enter your full name"} value={userInput.fullName} onChange={setFullName}></input>
                         </label>
-                        <label className={styles.label}>
-                            {"Username"}
-                            <input type={"text"} placeholder={"Enter your username"} value={userInput.username} onChange={setUserName}></input>
-                        </label>
                     </div>
                     <div className = {styles.row}>
                         <label className={styles.label}>
                             {"Email"}
                             <input type={"email"} placeholder={"Enter your email"} value={userInput.email} onChange={setEmail}></input>
                         </label>
-                        <label className={styles.label}>
-                            {"Country"}
-                            <input type={"text"} placeholder={"Enter your country"} value={userInput.country} onChange={setCountry}></input>
-                        </label>
                     </div>
                     <div className = {styles.row}>
-                        <label className={styles.label}>
-                            {"Date of Birth"}
-                            <input type={"date"} value={userInput.dob} onChange={setDob}></input>
-                        </label>
                         <label className={styles.label}>
                             {"Password"}
                             <input type={"password"} placeholder={"Enter your password"} value={userInput.password} onChange={setPassword}></input>

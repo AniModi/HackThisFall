@@ -1,0 +1,122 @@
+{
+  "breakfast": [
+    {
+      "name": "Idli",
+      "image_link": "https://maayeka.com/wp-content/uploads/2013/10/soft-idli-recipe.jpg"
+    },
+    {
+      "name": "Dosa",
+      "image_link": "https://recipes.timesofindia.com/thumb/54289752.cms?width=1200&height=900"
+    },
+    {
+      "name": "Poha",
+      "image_link": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1453880,resizemode-1,msid-70653217/magazines/panache/from-palms-to-plates-poha-is-a-deliciously-convenient-snack-that-now-rules-breakfast-menus.jpg"
+    },
+    {
+      "name": "Upma",
+      "image_link": "https://images.aws.nestle.recipes/resized/ba32df908435796279e3d79f0d5fbdc1_Rava_Upma_-_Twist_944_531.jpg"
+    },
+    {
+      "name": "Paratha",
+      "image_link": "https://www.vegrecipesofindia.com/wp-content/uploads/2009/08/aloo-paratha-recipe-2.jpg"
+    },
+    {
+      "name": "Vada",
+      "image_link": "https://vaya.in/recipes/wp-content/uploads/2018/02/Medu-Vada.jpg"
+    },
+    {
+      "name": "Aloo Tikki",
+      "image_link": "https://rumkisgoldenspoon.com/wp-content/uploads/2021/04/Aloo-tikki-chaat-recipe.jpg"
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Biryani",
+      "image_link": "https://www.pavaniskitchen.com/wp-content/uploads/2021/02/chbiryani.jpg"
+    },
+    {
+      "name": "Pulao",
+      "image_link": "https://recipesofhome.com/wp-content/uploads/2020/06/veg-pulao-recipe.jpg"
+    },
+    {
+      "name": "Chapati",
+      "image_link": "https://recipes.timesofindia.com/thumb/61203720.cms?width=1200&height=900"
+    },
+    {
+      "name": "Raita",
+      "image_link": "https://media.dinedelicious.in/wp-content/uploads/2021/03/Boondi-raita-Recipe-2.jpg"
+    },
+    {
+      "name": "Daal",
+      "image_link": "https://www.cookeatworld.com/wp-content/uploads/2021/07/ShahiDaal-3.jpg"
+    },
+    {
+      "name": "Sabzi",
+      "image_link": "https://www.cookwithnabeela.com/wp-content/uploads/2021/09/Lauki_Ki_Sabzi_Web_1.jpg"
+    },
+    {
+      "name": "Roti",
+      "image_link": "https://www.washingtonpost.com/resizer/K89fqKxrIsM_JWuLdFxEtCC9og8=/arc-anglerfish-washpost-prod-washpost/public/WISXYSKJ4JONKRP3YQAKBLIGPQ.JPG"
+    }
+  ],
+  "snacks": [
+    {
+      "name": "Samosa",
+      "image_link": "https://www.seriouseats.com/thmb/4HxqFS6SHsh1XBCXWWHbsyrGOxI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210909-SAMOSAS-ANDREWJANJIGIAN-86-ca872c2eae8e4e7eb4e7b47cfad8715e.jpg"
+    },
+    {
+      "name": "Kachori",
+      "image_link": "https://www.vegrecipesofindia.com/wp-content/uploads/2018/03/raj-kachori-chaat-recipe-1.jpg"
+    },
+    {
+      "name": "Vada Pav",
+      "image_link": "https://i.ytimg.com/vi/Z9Y60u8tI9M/maxresdefault.jpg"
+    },
+    {
+      "name": "Pakoda",
+      "image_link": "https://www.whiskaffair.com/wp-content/uploads/2020/07/Onion-Pakoda-2-3.jpg"
+    },
+    {
+      "name": "Bhajji",
+      "image_link": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Madhuli_Ajay/Gilka_Bhajji_Silk_Squash_Fritters.jpg"
+    },
+    {
+      "name": "Chaat",
+      "image_link": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Dahi_puri%2C_Doi_phuchka.jpg"
+    },
+    {
+      "name": "Sev Puri",
+      "image_link": "https://www.nayakskitchen.com/wp-content/uploads/2021/02/20210218_111233-scaled.jpg?v=1613540727"
+    }
+  ],
+  "dinner": [
+    {
+      "name": "Butter Chicken",
+      "image_link": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/butter-chicken-recipe.jpg"
+    },
+    {
+      "name": "Tandoori Chicken",
+      "image_link": "https://www.indianhealthyrecipes.com/wp-content/uploads/2014/09/tandoori-chicken-500x500.jpg"
+    },
+    {
+      "name": "Naan",
+      "image_link": "https://www.thespruceeats.com/thmb/MReCj8olqrCsPaGvikesPJie02U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/naan-leavened-indian-flatbread-1957348-final-08-116a2e523f6e4ee693b1a9655784d9b9.jpg"
+    },
+    {
+      "name": "Palak Paneer",
+      "image_link": "https://healthynibblesandbits.com/wp-content/uploads/2020/01/Saag-Paneer-FF.jpg"
+    },
+    {
+      "name": "Mutter Paneer",
+      "image_link": "https://pipingpotcurry.com/wp-content/uploads/2022/04/Matar-Paneer-in-instant-pot-Piping-Pot-Curry.jpg"
+    },
+    {
+      "name": "Chicken Tikka Masala",
+      "image_link": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/chicken-tikka-masala.jpg"
+    },
+    {
+      "name": "Lamb Rogan Josh",
+      "image_link": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rogan-josh-wide-1572547980.jpg"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap');
+
+.nav{
+    width: 100%;
+    min-height: 30px;
+    height: fit-content;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sofia Sans', sans-serif;
+    background-color: #fd9a1f;
+}
+
+.logo{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.other{
+    width: 50%;
+    display: flex;
+    font-size: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.link:first-child{
+    margin-left: 1rem;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    padding: 0.68rem;
+    border-radius:1rem;
+}
+
+.link:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    background-color: white;
+}
+.profile{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.profileBtn{
+    min-width: 40px;
+    border-radius: 100%;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circle{
+    min-width: 40px;
+    border-radius: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.profileImg{
+    width: 80%;
+}
+
+.dropDown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 0.7rem;
+    width: 20%;
+    min-width: 150px;
+    line-height: 1.5em;
+    color: black;
+    z-index: 10;
+    background: rgba(217, 214, 214, 0.7);
+    /* background: linear-gradient(257deg, rgba(112,13,234,1) 40%, rgba(240,50,112,1) 100%); */
+}
+
+.dropDown *{
+    color: black;
+    text-decoration: none;
+}
+
+.dropDown *:hover{
+    scale: 1.01;
+}
+
+.hide{
+    display: none;
+}
+.hamburger{
+    display: none;
+    width: 70%;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    height: fit-content;
+}
+
+.hOther{
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+    align-items: flex-end;
+    white-space: nowrap;
+    min-height:fit-content;
+    z-index: 10;
+    max-height:fit-content;
+}
+
+.hOtherActive{
+    height: fit-content;
+    visibility: visible;
+}
+
+@media screen and (max-width:1000px){
+    .other{
+        display: none;
+    }
+    .profile{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        width: 80%;
+    }
+}
+
+/* @media screen and (max-width:600px){
+    .hOther{
+    }
+} */
