@@ -1,12 +1,28 @@
 const express=require('express');
 const mongoose=require('mongoose');
-const User = require('../models/opt');
+const User = require('../models/opting');
 
 const app=express();
 app.use(express.json());
+const cors=require('cors');
 app.use(cors());
 
-app.post('/client/opt')
+app.post('/client/opt',(req,res)=>{
+    const user=new User({
+        userId:req.body.id,
+        breakfast:req.body.breakfast,
+        lunch:req.body.lunch,
+        snacks:req.body.snacks,
+        dinner:req.body.dinner
+    });
+    user.save()
+    .then((result)=>{
+        res.send(result);
+    })
+    .catch((err)=>{
+        console.log(err);
+    });
+})
 const dbURI = process.env.DB_URI;
 const port = process.env.PORT || 5000;
 

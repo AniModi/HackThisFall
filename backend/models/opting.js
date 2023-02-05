@@ -7,18 +7,18 @@ const OptingSchema=new Schema({
         type:String
     },
     breakfast:{
-        type:boolean
+        type:String
     },
     lunch:{
-        type:boolean
+        type:String
     },
     snacks:{
-        type:boolean
+        type:String
     },
     dinner:{
-        type:boolean
+        type:String
     },
     
 });
 
-module.exports=User=mongoose.model('opt',OptingSchema);
+module.exports=Opting=mongoose.model('opt',OptingSchema);
